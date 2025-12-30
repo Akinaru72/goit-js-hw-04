@@ -160,16 +160,16 @@ profile.updatePlayTime(20);
 console.log(profile.getInfo()); // "Marco has 320 active hours!"
 ```
 
-Leave this code for mentor review.
+Залиш цей код для перевірки ментором.
 
-### What the mentor will check:
+### На що буде звертати увагу ментор при перевірці:
 
-- The variable `profile` is declared
-- The value of `profile` is an object with the properties `username`, `playTime`, `getInfo`, `changeUsername`, and `updatePlayTime`
-- The property `getInfo` is a function
-- The property `changeUsername` is a function
-- The property `updatePlayTime` is a function
-- Inside the object's methods, `this` is used to access the object's properties
+- Оголошена змінна `profile`
+- Значення змінної `profile` — це об’єкт з властивостями `username`, `playTime`, `getInfo`, `changeUsername` і `updatePlayTime`
+- Значення властивості `getInfo` — це функція
+- Значення властивості `changeUsername` — це функція
+- Значення властивості `updatePlayTime` — це функція
+- Для звернення до властивостей об’єкта в його методах використовується `this`
 
 ---
 

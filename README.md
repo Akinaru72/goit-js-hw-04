@@ -96,29 +96,29 @@ Keep this code for mentor review.
   ]);
   ```
 
-  - The call to `calcAverageCalories([...])` returns `2270`
+- The call to `calcAverageCalories([...])` returns `2270`
 
-  ```js
-  calcAverageCalories([
-    { day: "monday", calories: 2040 },
-    { day: "tuesday", calories: 2270 },
-    { day: "wednesday", calories: 2420 },
-    { day: "thursday", calories: 1900 },
-    { day: "friday", calories: 2370 },
-    { day: "saturday", calories: 2280 },
-    { day: "sunday", calories: 2610 },
-  ]);
-  ```
+```js
+calcAverageCalories([
+  { day: "monday", calories: 2040 },
+  { day: "tuesday", calories: 2270 },
+  { day: "wednesday", calories: 2420 },
+  { day: "thursday", calories: 1900 },
+  { day: "friday", calories: 2370 },
+  { day: "saturday", calories: 2280 },
+  { day: "sunday", calories: 2610 },
+]);
+```
 
-  - The call to `calcAverageCalories([])` returns `0`
+- The call to `calcAverageCalories([])` returns `0`
 
-  ```js
-  calcAverageCalories([]);
-  ```
+```js
+calcAverageCalories([]);
+```
 
-  ***
+---
 
-  ## Task 3. Player Profile
+## Task 3. Player Profile
 
 The `profile` object describes a user's profile on a gaming platform. Its properties include the profile name `username` and the number of active hours `playTime` spent in the game.
 
@@ -160,6 +160,17 @@ console.log(profile.getInfo()); // "Marco has 300 active hours!"
 profile.updatePlayTime(20);
 console.
 ```
+
+Leave this code for mentor verification.
+
+### What the mentor will check:
+
+- The variable `profile` is declared
+- The value of `profile` is an object with properties `username`, `playTime`, `getInfo`, `changeUsername`, and `updatePlayTime`
+- The property `getInfo` is a function
+- The property `changeUsername` is a function
+- The property `updatePlayTime` is a function
+- Inside the object methods, `this` is used to access object properties
 
 ---
 
