@@ -1,137 +1,166 @@
-# goit-js-hw-04
+# Homework №4
 
-Домашнє завдання №4
-Створи репозиторій goit-js-hw-04.
-Створи окремий файл із розширенням .js для кожної із задач.
-Прочитай кожне завдання і виконай його в редакторі коду.
-Переконайся, що код відформатований за допомогою Prettier, а в консолі відсутні помилки й попередження під час відкриття живої сторінки завдання.
-Здай домашнє завдання на перевірку.
-Формат здачі: Домашня робота містить два посилання: на вихідні файли та робочу сторінку на GitHub Pages.
+1. Create a repository `goit-js-hw-04`.
+2. Create a separate `.js` file for each task.
+3. Read each task and complete it in your code editor.
+4. Make sure the code is formatted using Prettier and that there are no errors or warnings in the console when opening the live task page.
+5. Submit the homework for review.
 
-Задача 1. Пакування товарів
-Напиши функцію isEnoughCapacity(products, containerSize), яка обчислює, чи помістяться всі товари в контейнер при пакуванні.
+Submission format: The homework should include two links — to the source files and the live GitHub Pages page.
 
-Функція оголошує два параметри:
+---
 
-products — об’єкт, у якому ключі містять назви товарів, а їхні значення — кількість цих товарів. Наприклад, { apples: 2, grapes: 4 }.
-containerSize — число, максимальна кількість одиниць товарів, яку в себе може вмістити контейнер.
-Функція має повернути результат перевірки, чи помістяться всі товари в контейнер. Тобто порахувати загальну кількість товарів в об’єкті products і повернути true, якщо вона менше або дорівнює containerSize, і false, якщо ні.
+## Task 1. Packing Products
 
-Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її викликів.
+Write a function `isEnoughCapacity(products, containerSize)` that calculates whether all products will fit into a container.
 
+### Function parameters:
+
+- `products` — an object where keys are product names and values are the quantity of each product. For example, `{ apples: 2, grapes: 4 }`.
+- `containerSize` — a number representing the maximum number of product units the container can hold.
+
+The function should return `true` if all products fit into the container, and `false` if not.
+
+### Test code
+
+```js
+console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)); // true
+console.log(isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12)); // false
+console.log(isEnoughCapacity({ apples: 1, lime: 5, tomatos: 3 }, 14)); // true
+console.log(isEnoughCapacity({ apples: 18, potatos: 5, oranges: 2 }, 7)); // false
+```
+
+Keep this code for mentor review.
+
+### What the mentor will pay attention to:
+
+- The function `isEnoughCapacity(products, containerSize)` is declared
+- The call `isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)` returns `true`
+- The call `isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12)` returns `false`
+- The call `isEnoughCapacity({ apples: 1, lime: 5, tomatos: 3 }, 14)` returns `true`
+- The call `isEnoughCapacity({ apples: 18, potatos: 5, oranges: 2 }, 7)` returns `false`
+
+---
+
+## Task 2. Calorie Calculation
+
+Write a function `calcAverageCalories(days)` that returns the average daily number of calories consumed by an athlete during the week. The function expects one parameter: `days` — an array of objects. Each object describes a day of the week and the number of calories `calories` consumed by the athlete on that day.
+
+Use the code below and place it after your function declaration to check its correctness.  
+The console will display the results of the function calls.
+
+```js
 console.log(
-isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)
-); // true
-
-console.log(
-isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12)
-); // false
-
-console.log(
-isEnoughCapacity({ apples: 1, lime: 5, tomatos: 3 }, 14)
-); // true
-
-console.log(
-isEnoughCapacity({ apples: 18, potatos: 5, oranges: 2 }, 7)
-); // false
-
-Залиш цей код для перевірки ментором.
-
-На що буде звертати увагу ментор при перевірці:
-Оголошена функція isEnoughCapacity(products, containerSize)
-Виклик isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8) повертає true
-Виклик isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12) повертає false
-Виклик isEnoughCapacity({ apples: 1, lime: 5, tomatos: 3 }, 14) повертає true
-Виклик isEnoughCapacity({ apples: 18, potatos: 5, oranges: 2 }, 7) повертає false
-Задача 2. Розрахунок калорій
-Напиши функцію calcAverageCalories(days), яка повертає середньодобове значення кількості калорій, які спортсмен споживав протягом тижня. Функція очікує один параметр: days — масив об’єктів. Кожен об’єкт описує день тижня та кількість калорій calories, спожитих спортсменом, у цей день. Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її викликів.
-
-console.log(
-calcAverageCalories([
-{ day: "monday", calories: 3010 },
-{ day: "tuesday", calories: 3200 },
-{ day: "wednesday", calories: 3120 },
-{ day: "thursday", calories: 2900 },
-{ day: "friday", calories: 3450 },
-{ day: "saturday", calories: 3280 },
-{ day: "sunday", calories: 3300 }
-])
+  calcAverageCalories([
+    { day: "monday", calories: 3010 },
+    { day: "tuesday", calories: 3200 },
+    { day: "wednesday", calories: 3120 },
+    { day: "thursday", calories: 2900 },
+    { day: "friday", calories: 3450 },
+    { day: "saturday", calories: 3280 },
+    { day: "sunday", calories: 3300 },
+  ])
 ); // 3180
 
 console.log(
-calcAverageCalories([
-{ day: "monday", calories: 2040 },
-{ day: "tuesday", calories: 2270 },
-{ day: "wednesday", calories: 2420 },
-{ day: "thursday", calories: 1900 },
-{ day: "friday", calories: 2370 },
-{ day: "saturday", calories: 2280 },
-{ day: "sunday", calories: 2610 }
-])
+  calcAverageCalories([
+    { day: "monday", calories: 2040 },
+    { day: "tuesday", calories: 2270 },
+    { day: "wednesday", calories: 2420 },
+    { day: "thursday", calories: 1900 },
+    { day: "friday", calories: 2370 },
+    { day: "saturday", calories: 2280 },
+    { day: "sunday", calories: 2610 },
+  ])
 ); // 2270
 
-console.log(
-calcAverageCalories([])
-); // 0
+console.log(calcAverageCalories([])); // 0
+```
 
-Залиш цей код для перевірки ментором.
+Keep this code for mentor review.
 
-На що буде звертати увагу ментор при перевірці:
-Оголошена функція calcAverageCalories(days)
-Такий виклик функції calcAverageCalories повертає 3180
-calcAverageCalories([
-{ day: "monday", calories: 3010 },
-{ day: "tuesday", calories: 3200 },
-{ day: "wednesday", calories: 3120 },
-{ day: "thursday", calories: 2900 },
-{ day: "friday", calories: 3450 },
-{ day: "saturday", calories: 3280 },
-{ day: "sunday", calories: 3300 }
-])
+### What the mentor will pay attention to:
 
-Такий виклик функції calcAverageCalories повертає 2270
-calcAverageCalories([
-{ day: "monday", calories: 2040 },
-{ day: "tuesday", calories: 2270 },
-{ day: "wednesday", calories: 2420 },
-{ day: "thursday", calories: 1900 },
-{ day: "friday", calories: 2370 },
-{ day: "saturday", calories: 2280 },
-{ day: "sunday", calories: 2610 }
-])
+- The function `calcAverageCalories(days)` is declared
+- The call to `calcAverageCalories([...])` returns `3180`
 
-Такий виклик функції calcAverageCalories повертає 0
-calcAverageCalories([])
+  ```js
+  calcAverageCalories([
+    { day: "monday", calories: 3010 },
+    { day: "tuesday", calories: 3200 },
+    { day: "wednesday", calories: 3120 },
+    { day: "thursday", calories: 2900 },
+    { day: "friday", calories: 3450 },
+    { day: "saturday", calories: 3280 },
+    { day: "sunday", calories: 3300 },
+  ]);
+  ```
 
-Задача 3. Профіль гравця
-Об’єкт profile описує профіль користувача на ігровій платформі. У його властивостях зберігається ім’я профілю username та кількість активних годин playTime, проведених у грі.
+  - The call to `calcAverageCalories([...])` returns `2270`
 
+  ```js
+  calcAverageCalories([
+    { day: "monday", calories: 2040 },
+    { day: "tuesday", calories: 2270 },
+    { day: "wednesday", calories: 2420 },
+    { day: "thursday", calories: 1900 },
+    { day: "friday", calories: 2370 },
+    { day: "saturday", calories: 2280 },
+    { day: "sunday", calories: 2610 },
+  ]);
+  ```
+
+  - The call to `calcAverageCalories([])` returns `0`
+
+  ```js
+  calcAverageCalories([]);
+  ```
+
+  ***
+
+  ## Task 3. Player Profile
+
+The `profile` object describes a user's profile on a gaming platform. Its properties include the profile name `username` and the number of active hours `playTime` spent in the game.
+
+```js
 const profile = {
-username: "Jacob",
-playTime: 300,
+  username: "Jacob",
+  playTime: 300,
 };
+```
 
-Доповни об’єкт profile методами для роботи з його властивостями.
+Extend the `profile` object with methods to work with its properties
 
-Метод changeUsername(newName) повинен приймати рядок (нове ім’я) в параметр newName та змінювати значення властивості username на нове. Нічого не повертає.
-Метод updatePlayTime(hours) повинен приймати число (кількість годин) у параметр hours та збільшити на нього значення властивості playTime. Нічого не повертає.
-Метод getInfo() має повертати рядок формату <Username> has <amount> active hours!, де <Username> — це ім’я профілю, а <amount> — кількість ігрових годин.
-Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+Method `changeUsername(newName)`
 
+- Accepts a string (new name) as the parameter `newName`
+- Changes the value of the `username` property to the new name
+- Returns nothing
+
+Method `updatePlayTime(hours)`
+
+- Accepts a number (hours) as the parameter `hours`
+- Increases the `playTime` property by this number
+- Returns nothing
+
+Method `getInfo()`
+
+- Returns a string in the format `<Username> has <amount> active hours!`, where  
+  `<Username>` — the profile's username,  
+  `<amount>` — the number of active hours
+
+Example usage
+
+```js
 console.log(profile.getInfo()); // "Jacob has 300 active hours!"
 
 profile.changeUsername("Marco");
 console.log(profile.getInfo()); // "Marco has 300 active hours!"
 
 profile.updatePlayTime(20);
-console.log(profile.getInfo()); // "Marco has 320 active hours!"
+console.
+```
 
-Залиш цей код для перевірки ментором.
+---
 
-На що буде звертати увагу ментор при перевірці:
-Оголошена змінна profile
-Значення змінної profile — це об’єкт з властивостями username, playTime, getInfo, changeUsername і updatePlayTime
-Значення властивості getInfo — це функція
-Значення властивості changeUsername — це функція
-Значення властивості updatePlayTime — це функція
-Для звернення до властивостей об’єкта в його методах використовується this
+**Live page: [GitHub Pages](https://akinaru72.github.io/goit-js-hw-04/)**
