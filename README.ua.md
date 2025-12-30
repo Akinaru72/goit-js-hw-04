@@ -82,33 +82,38 @@ console.log(calcAverageCalories([])); // 0
 
 - Оголошена функція `calcAverageCalories(days)`
 - Виклик функції `calcAverageCalories([...])` повертає `3180`
-  ```js
-  calcAverageCalories([
-    { day: "monday", calories: 3010 },
-    { day: "tuesday", calories: 3200 },
-    { day: "wednesday", calories: 3120 },
-    { day: "thursday", calories: 2900 },
-    { day: "friday", calories: 3450 },
-    { day: "saturday", calories: 3280 },
-    { day: "sunday", calories: 3300 },
-  ]);
-  ```
+
+```js
+calcAverageCalories([
+  { day: "monday", calories: 3010 },
+  { day: "tuesday", calories: 3200 },
+  { day: "wednesday", calories: 3120 },
+  { day: "thursday", calories: 2900 },
+  { day: "friday", calories: 3450 },
+  { day: "saturday", calories: 3280 },
+  { day: "sunday", calories: 3300 },
+]);
+```
+
 - Виклик функції `calcAverageCalories([...])` повертає `2270`
-  ```js
-  calcAverageCalories([
-    { day: "monday", calories: 2040 },
-    { day: "tuesday", calories: 2270 },
-    { day: "wednesday", calories: 2420 },
-    { day: "thursday", calories: 1900 },
-    { day: "friday", calories: 2370 },
-    { day: "saturday", calories: 2280 },
-    { day: "sunday", calories: 2610 },
-  ]);
-  ```
+
+```js
+calcAverageCalories([
+  { day: "monday", calories: 2040 },
+  { day: "tuesday", calories: 2270 },
+  { day: "wednesday", calories: 2420 },
+  { day: "thursday", calories: 1900 },
+  { day: "friday", calories: 2370 },
+  { day: "saturday", calories: 2280 },
+  { day: "sunday", calories: 2610 },
+]);
+```
+
 - Виклик функції `calcAverageCalories([])` повертає `0`
-  ```js
-  calcAverageCalories([]);
-  ```
+
+```js
+calcAverageCalories([]);
+```
 
 ---
 
@@ -159,14 +164,13 @@ Leave this code for mentor review.
 
 ### What the mentor will check:
 
-- The variable `profile` is declared  
-- The value of `profile` is an object with the properties `username`, `playTime`, `getInfo`, `changeUsername`, and `updatePlayTime`  
-- The property `getInfo` is a function  
-- The property `changeUsername` is a function  
-- The property `updatePlayTime` is a function  
+- The variable `profile` is declared
+- The value of `profile` is an object with the properties `username`, `playTime`, `getInfo`, `changeUsername`, and `updatePlayTime`
+- The property `getInfo` is a function
+- The property `changeUsername` is a function
+- The property `updatePlayTime` is a function
 - Inside the object's methods, `this` is used to access the object's properties
 
 ---
 
 **Жива сторінка: [GitHub Pages](https://akinaru72.github.io/goit-js-hw-04/)**
-
